@@ -2,6 +2,23 @@ import torch
 from torch import nn, optim
 import torch.nn.functional as F
 import torch.utils.data as Data
+import numpy as np
+
+def one_hot_encode_seq(seq):
+    
+    ds_out = np.zeros([4,len(seq)])
+  
+    for i, l in enumerate(seq):
+        if (l == 'A'):
+            ds_out[0,i] = 1
+        if (l == 'G'):
+            ds_out[1,i] = 1
+        if (l == 'C'):
+            ds_out[2,i] = 1
+        if (l == 'T'):
+            ds_out[3,i] = 1    
+            
+    return(ds_out)
 
 nfeats = 4
 height = 1
