@@ -62,3 +62,16 @@ class deep_sea_nn(nn.Module):
         
         return ds
         
+        
+def get_title():
+    title = """
+    =============================================
+    88888                     888888            
+    8    8 eeee eeee eeeee    8      eeee eeeee 
+    8e   8 8    8    8   8    8eeeee 8    8   8 
+    88   8 8eee 8eee 8eee8        88 8eee 8eee8 
+    88   8 88   88   88       e   88 88   88  8 
+    88eee8 88ee 88ee 88       8eee88 88ee 88  8 
+    =============================================
+    """
+    print(title)
